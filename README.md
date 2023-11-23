@@ -1,16 +1,32 @@
 # riverpod_v2_tutorial
 
-A new Flutter project.
+## Environment
+```shell
+❯ fvm --version     
+2.4.1
 
-## Getting Started
+❯ fvm flutter doctor
+Doctor summary (to see all details, run flutter doctor -v):
+[✓] Flutter (Channel stable, 3.16.0, on macOS 14.1.1 23B81 darwin-arm64, locale ja-JP)
+[✓] Android toolchain - develop for Android devices (Android SDK version 31.0.0)
+[✓] Xcode - develop for iOS and macOS (Xcode 15.0.1)
+[✓] Chrome - develop for the web
+[✓] Android Studio (version 2022.3)
+[✓] VS Code (version 1.84.2)
+[✓] Connected device (3 available)
+[✓] Network resources
 
-This project is a starting point for a Flutter application.
+• No issues found!
+```
 
-A few resources to get you started if this is your first Flutter project:
+# Setup
+- 以下のコマンドを実行して、 使用するFlutterのバージョンの設定やパッケージの取得を行う
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```shell
+git clone https://github.com/TowaYamashita/riverpod_v2_tutorial.git
+cd riverpod_v2_tutorial
+fvm install
+fvm flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- VSCode の「実行とデバッグ」タブから、適当なモードを選んで「デバッグの開始」を押下する
