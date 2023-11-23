@@ -19,7 +19,7 @@ Doctor summary (to see all details, run flutter doctor -v):
 • No issues found!
 ```
 
-# Setup
+## Setup
 - 以下のコマンドを実行して、 使用するFlutterのバージョンの設定やパッケージの取得を行う
 
 ```shell
