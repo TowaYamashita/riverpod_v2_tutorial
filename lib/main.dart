@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_v2_tutorial/page/first_request_page.dart';
+import 'package:riverpod_v2_tutorial/page/passing_args_page.dart';
 import 'package:riverpod_v2_tutorial/page/side_effects_page.dart';
 
 void main() {
@@ -54,6 +55,16 @@ class MyHomePage extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => const SideEffectsPage(),
+            ),
+          );
+        },
+      ),
+      ListTile(
+        title: const Text('passing_args'),
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => const PassingArgsPage(),
             ),
           );
         },
