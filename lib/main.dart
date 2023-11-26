@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_v2_tutorial/page/combining_requests_page.dart';
 import 'package:riverpod_v2_tutorial/page/first_request_page.dart';
 import 'package:riverpod_v2_tutorial/page/passing_args_page.dart';
 import 'package:riverpod_v2_tutorial/page/side_effects_page.dart';
@@ -76,6 +77,16 @@ class MyHomePage extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => const WebsocketsSyncPage(),
+            ),
+          );
+        },
+      ),
+      ListTile(
+        title: const Text('combaining_requests'),
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => const CombainingRequestsPage(),
             ),
           );
         },
