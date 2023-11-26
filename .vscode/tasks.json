@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "setup",
+			"type": "shell",
+			"command": "fvm install"
+		},
+		{
+			"label": "clean",
+			"type": "shell",
+			"command": "fvm flutter clean"
+		},
+		{
+			"label": "fetch package",
+			"type": "shell",
+			"command": "fvm flutter pub get"
+		},
+		{
+			"label": "run build-runner",
+			"type": "shell",
+			"command": "fvm flutter pub run build_runner build --delete-conflicting-outputs"
+		},
+		{
+			"label": "initial setup",
+			"type": "shell",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"setup",
+				"clean",
+				"fetch package",
+				"run build-runner"
+			],
+			"detail": "初期セットアップ",
+			"problemMatcher": [
+				"$dart-build_runner"
+			],
+			"isBackground": true
+		},
+		{
+			"label": "generate code",
+			"type": "shell",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"clean",
+				"fetch package",
+				"run build-runner"
+			],
+			"detail": "コードを自動生成する",
+			"problemMatcher": [
+				"$dart-build_runner"
+			],
+			"isBackground": true
+		}
+	]
+}

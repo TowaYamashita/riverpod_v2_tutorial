@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_v2_tutorial/page/first_request_page.dart';
 import 'package:riverpod_v2_tutorial/page/passing_args_page.dart';
 import 'package:riverpod_v2_tutorial/page/side_effects_page.dart';
+import 'package:riverpod_v2_tutorial/page/websockets_sync_page.dart';
 
 void main() {
   runApp(
@@ -65,6 +66,16 @@ class MyHomePage extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => const PassingArgsPage(),
+            ),
+          );
+        },
+      ),
+      ListTile(
+        title: const Text('websockets_sync'),
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => const WebsocketsSyncPage(),
             ),
           );
         },
