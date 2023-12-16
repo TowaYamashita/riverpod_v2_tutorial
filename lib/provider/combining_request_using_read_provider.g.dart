@@ -7,7 +7,7 @@ part of 'combining_request_using_read_provider.dart';
 // **************************************************************************
 
 String _$combiningRequestUsingReadHash() =>
-    r'60f1da32c1d0eecfd397617b49c5018aec4d16c0';
+    r'61b41792bebc5fe1f93722675f883801edf99d49';
 
 /// See also [CombiningRequestUsingRead].
 @ProviderFor(CombiningRequestUsingRead)
