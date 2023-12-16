@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_v2_tutorial/page/auto_dispose_page.dart';
 import 'package:riverpod_v2_tutorial/page/combining_requests_page.dart';
 import 'package:riverpod_v2_tutorial/page/first_request_page.dart';
 import 'package:riverpod_v2_tutorial/page/passing_args_page.dart';
@@ -87,6 +88,16 @@ class MyHomePage extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (_) => const CombainingRequestsPage(),
+            ),
+          );
+        },
+      ),
+      ListTile(
+        title: const Text('auto_dispose'),
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (_) => const AutoDisposePage(),
             ),
           );
         },
